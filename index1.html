@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #9face6);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 400px;
+      background: white;
+      margin: 50px auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .gender {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 12px;
+    }
+
+    .gender label {
+      font-weight: normal;
+      margin: 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Password</label>
+      <input type="password" placeholder="Enter password">
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter phone number">
+
+      <label>Date of Birth</label>
+      <input type="date">
+
+      <label>Gender</label>
+      <div class="gender">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Other</label>
+      </div>
+
+      <label>Department</label>
+      <select>
+        <option>Select Department</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>MECH</option>
+        <option>CIVIL</option>
+      </select>
+
+      <label>Address</label>
+      <textarea rows="4" placeholder="Enter your address"></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
